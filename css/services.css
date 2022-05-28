@@ -44,6 +44,7 @@ body {
 
 #showcase h1 {
   font-size: 4rem;
+  color: var(--light-color);
 }
 
 /* Services table */
@@ -91,32 +92,36 @@ body {
   height: 100%;
 }
 
+
+
 /* Button */
 
+
+
 .book-now {
-  margin: 0 auto;
   display: inline-block;
   text-align: center;
   width: 100%;
-  background: var(--dark-color);
   height: 120px;
 }
 
-.book-now a {
-  margin: auto;
+.book-now .btn {
+  margin-top: 30px;
 }
 
-
-
 /* Images */
+
+#images {
+  background: var(--light-color);
+  margin-top: 0;
+}
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 1rem;
   margin: 50px auto;
-  width: 60%;
-  
+  width: 70%;
 }
 
 .image a {
@@ -133,7 +138,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
+  margin: 0;
 }
 
 .gallery-text h2 {
@@ -142,3 +147,28 @@ img {
 }
 
 
+/* Services Small screens */
+
+@media(max-width: 1000px) {
+  .services-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services-container img {
+    margin: 40px auto;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5rem;
+    margin: 20px auto;
+  }
+  .services-container img {
+    width: 75%;
+    height: 400px;
+    object-fit: cover;
+    margin: 2rem auto;
+  }
+}

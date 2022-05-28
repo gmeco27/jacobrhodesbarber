@@ -18,6 +18,10 @@ body {
     font-family: 'Trocchi', serif;
 }
 
+.bg-light {
+    background: var(--light-color);
+}
+
 .container {
     max-width: 960px;
     margin: auto;
@@ -70,7 +74,7 @@ body {
     color: #fff;
     padding: 1rem 2rem;
     font-size: 1.3rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     transition: opacity all 1s ease-in-out;
     text-decoration: none;
 }

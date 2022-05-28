@@ -44,6 +44,7 @@ body {
 
 #showcase h1 {
   font-size: 4rem;
+  color: var(--light-color)
 }
 
 /* Contact Info */
@@ -135,4 +136,28 @@ body {
 .map {
   width: 75%;
   margin: 10px auto;
+}
+
+
+
+/* Small screens */
+
+@media(max-width: 1000px) {
+  
+  .flex-container .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 75%;
+    margin: 0 auto 25px auto;
+  }
+  
+  .row .contact-text {
+    margin: 10px 0;
+  }
+  .row .flex-hours {
+    margin: 10px 0;
+  }
 }
